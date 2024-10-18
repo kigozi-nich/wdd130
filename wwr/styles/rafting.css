@@ -65,7 +65,7 @@ nav a:hover {
 
 .hero h1 {
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
 .hero article {
@@ -73,7 +73,7 @@ nav a:hover {
     padding: 20px;
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
 }
 
 .hero article img {
