@@ -65,6 +65,7 @@ nav a:hover {
 
 .hero h1 {
     margin-bottom: 20px;
+    color: white;
 }
 
 .hero article {
@@ -82,18 +83,26 @@ nav a:hover {
 }
 
 /* History section styles */
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
-    margin-bottom: 30px;
+.history div {
+    display: flex;
+    flex-direction: row; /* Aligns items in a row */
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Centers items horizontally */
+    gap: 30px;
+}
+
+.history-content p {
+    margin: 0 20px; /* Adjusts margin between paragraphs and image */
 }
 
 .history img {
-    max-width: 200px;
-    height: auto;
+ width: 300px;
+ height: 200px;
+ margin-left: 0px;
 }
+
+
+
 
 /* Adventures section styles */
 .adventures {
@@ -146,3 +155,5 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+
