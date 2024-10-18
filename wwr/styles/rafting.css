@@ -60,7 +60,7 @@ nav a:hover {
 .hero {
     text-align: center;
     margin-bottom: 30px;
-    background-image: url(../image/underrafting.jpg);
+    background-image: url("../image/underrafting.jpg");
 }
 
 .hero h1 {
