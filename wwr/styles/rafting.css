@@ -1,0 +1,109 @@
+/* rafting.css */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent1-color: #28a745;
+    --accent2-color: #ffc107;
+    
+    --heading-font: 'Merriweather', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 200px;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section img {
+    width: calc(20% - 10px);
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.sociallinks a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+}
