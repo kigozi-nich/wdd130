@@ -5,7 +5,6 @@
     --secondary-color: #6c757d;
     --accent1-color: #28a745;
     --accent2-color: #ffc107;
-    
     --heading-font: 'Merriweather', serif;
     --paragraph-font: 'Roboto', sans-serif;
 }
@@ -24,82 +23,122 @@ h1, h2 {
     text-align: center;
 }
 
+/* Header styles */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #e6e6fa; /* Light purple background */
 }
 
 header img {
     max-width: 200px;
 }
 
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav a {
     color: var(--secondary-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
 }
 
 nav a:hover {
     color: var(--primary-color);
+    background-color: var(--accent2-color);
 }
 
+/* Hero section styles */
 .hero {
-    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: url(/wwr/image/underrafting.jpg);
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.hero article {
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero article img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* History section styles */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
     margin-bottom: 30px;
 }
 
-.hero img {
-    display: block;
+.history img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Adventures section styles */
+.adventures {
+    margin-bottom: 30px;
+}
+
+.adventures h2 {
+    margin-bottom: 20px;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventure-images figure {
+    width: 18%;
+    margin: 0;
+}
+
+.adventure-images img {
     width: 100%;
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 50px;
-    left: 300px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+.adventure-images figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--secondary-color);
 }
 
-.hero article {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    background-color: rgba(255,255,255,0.8);
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.hero article img {
-    float: right;
-    width: 200px;
-    margin-left: 20px;
-    border-radius: 5px;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-section img {
-    width: calc(20% - 10px);
-    margin: 5px;
-}
-
+/* Footer styles */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    border-top: 1px solid var(--secondary-color);
+    padding: 20px;
+    background-color: #e6e6fa; /* Light purple background */
+}
+
+.sociallinks {
+    display: flex;
 }
 
 .sociallinks a {
-    text-decoration: none;
     margin-left: 10px;
 }
 
